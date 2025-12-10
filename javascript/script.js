@@ -15,5 +15,8 @@ function getMood () {
 }
 
 function getAdvice(mood) {
-    
+    const advice = moodAdvice[mood];
+    const randomIndex = Math.floor(Math.random() * advice.length);
+    return advice[randomIndex];
 }
+
