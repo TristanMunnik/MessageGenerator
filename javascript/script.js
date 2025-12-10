@@ -7,3 +7,13 @@ const moodAdvice = {
     tired : ['take a nap', 'drink some water', 'do some exercise'],
     bored : ['practice coding', 'play some games', 'go to the beach if you can']
 }
+
+function getMood () {
+    const mood = Object.keys(moodAdvice);
+    const randomIndex = Math.floor(Math.random() * mood.length);
+    return mood[randomIndex];
+}
+
+function getAdvice(mood) {
+    
+}
